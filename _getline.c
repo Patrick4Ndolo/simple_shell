@@ -1,4 +1,7 @@
-nclude "shell.h"
+#include "shell.h"
+#include <stdlib.h>
+#include <stddef.h>
+
 
 /**
 * _getline - read one line from the prompt.
@@ -6,7 +9,7 @@ nclude "shell.h"
 *
 * Return: reading counting bytes.
 */
-int _getline(data_of_program *data)
+int _getline(data_of_program * data)
 {
 	char buff[BUFFER_SIZE] = {'\0'};
 	static char *array_commands[10] = {NULL};
